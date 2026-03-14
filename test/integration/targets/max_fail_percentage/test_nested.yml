@@ -12,7 +12,7 @@
             msg: "rescue fail"
       always:
         - debug:
-            msg: "always cleanup"
+            msg: "always ran on {{ inventory_hostname }}"
 
     - name: Marker task
       set_fact:
